@@ -14,6 +14,12 @@
 		C3F250E72A82CA40002161A1 /* CSTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250E62A82CA40002161A1 /* CSTVTests.swift */; };
 		C3F250F12A82CA40002161A1 /* CSTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250F02A82CA40002161A1 /* CSTVUITests.swift */; };
 		C3F250F32A82CA40002161A1 /* CSTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250F22A82CA40002161A1 /* CSTVUITestsLaunchTests.swift */; };
+		C3F251032A82ECFB002161A1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251022A82ECFB002161A1 /* Endpoint.swift */; };
+		C3F251052A82ED8B002161A1 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251042A82ED8B002161A1 /* APIConfig.swift */; };
+		C3F251072A82EF3F002161A1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251062A82EF3F002161A1 /* APIClient.swift */; };
+		C3F251092A82EFB0002161A1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251082A82EFB0002161A1 /* NetworkError.swift */; };
+		C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2510A2A82F029002161A1 /* RequestAPIClient.swift */; };
+		C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2510C2A82F0EC002161A1 /* NetworkAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +50,13 @@
 		C3F250EC2A82CA40002161A1 /* CSTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250F02A82CA40002161A1 /* CSTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVUITests.swift; sourceTree = "<group>"; };
 		C3F250F22A82CA40002161A1 /* CSTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C3F250FF2A82D1F8002161A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C3F250FF2A82D1F8002161A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F251022A82ECFB002161A1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C3F251042A82ED8B002161A1 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		C3F251062A82EF3F002161A1 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C3F251082A82EFB0002161A1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C3F2510A2A82F029002161A1 /* RequestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIClient.swift; sourceTree = "<group>"; };
+		C3F2510C2A82F0EC002161A1 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +107,10 @@
 		C3F250D42A82CA3F002161A1 /* CSTV */ = {
 			isa = PBXGroup;
 			children = (
-				C3F250FF2A82D1F8002161A1 /* Info.plist */,
+				C3F251012A82EC27002161A1 /* Network */,
+				C3F251002A82EB99002161A1 /* Resources */,
 				C3F250D52A82CA3F002161A1 /* CSTVApp.swift */,
 				C3F250D72A82CA3F002161A1 /* ContentView.swift */,
-				C3F250D92A82CA40002161A1 /* Assets.xcassets */,
 				C3F250DB2A82CA40002161A1 /* Preview Content */,
 			);
 			path = CSTV;
@@ -127,6 +139,60 @@
 				C3F250F22A82CA40002161A1 /* CSTVUITestsLaunchTests.swift */,
 			);
 			path = CSTVUITests;
+			sourceTree = "<group>";
+		};
+		C3F251002A82EB99002161A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3F250FF2A82D1F8002161A1 /* Info.plist */,
+				C3F250D92A82CA40002161A1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3F251012A82EC27002161A1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251102A82F300002161A1 /* APIClient */,
+				C3F251112A82F32C002161A1 /* APIConfig */,
+				C3F2510E2A82F2DB002161A1 /* NetworkAdapter */,
+				C3F2510F2A82F2E6002161A1 /* NetworkError */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C3F2510E2A82F2DB002161A1 /* NetworkAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2510C2A82F0EC002161A1 /* NetworkAdapter.swift */,
+			);
+			path = NetworkAdapter;
+			sourceTree = "<group>";
+		};
+		C3F2510F2A82F2E6002161A1 /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251082A82EFB0002161A1 /* NetworkError.swift */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
+		C3F251102A82F300002161A1 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2510A2A82F029002161A1 /* RequestAPIClient.swift */,
+				C3F251062A82EF3F002161A1 /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		C3F251112A82F32C002161A1 /* APIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251022A82ECFB002161A1 /* Endpoint.swift */,
+				C3F251042A82ED8B002161A1 /* APIConfig.swift */,
+			);
+			path = APIConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +326,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F250D82A82CA3F002161A1 /* ContentView.swift in Sources */,
+				C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */,
+				C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */,
+				C3F251032A82ECFB002161A1 /* Endpoint.swift in Sources */,
+				C3F251052A82ED8B002161A1 /* APIConfig.swift in Sources */,
+				C3F251092A82EFB0002161A1 /* NetworkError.swift in Sources */,
+				C3F251072A82EF3F002161A1 /* APIClient.swift in Sources */,
 				C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +493,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CSTV/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CSTV/Info.plist;
+				INFOPLIST_FILE = CSTV/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +521,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CSTV/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CSTV/Info.plist;
+				INFOPLIST_FILE = CSTV/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
