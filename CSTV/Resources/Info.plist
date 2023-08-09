@@ -5,7 +5,7 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
-		<string>splashBackground</string>
+		<string>fuzeBackground</string>
 		<key>UIImageName</key>
 		<string>fuze</string>
 	</dict>

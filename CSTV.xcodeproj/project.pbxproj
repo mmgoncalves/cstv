@@ -34,6 +34,8 @@
 		C3F251372A841C10002161A1 /* RequestAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251362A841C10002161A1 /* RequestAPIClientTests.swift */; };
 		C3F251392A841C63002161A1 /* NetworkAdapterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251382A841C63002161A1 /* NetworkAdapterMock.swift */; };
 		C3F2513B2A841D5E002161A1 /* CodableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2513A2A841D5E002161A1 /* CodableMock.swift */; };
+		C3F251422A842891002161A1 /* MatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251412A842891002161A1 /* MatchListView.swift */; };
+		C3F251462A84290F002161A1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251452A84290F002161A1 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		C3F251362A841C10002161A1 /* RequestAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIClientTests.swift; sourceTree = "<group>"; };
 		C3F251382A841C63002161A1 /* NetworkAdapterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapterMock.swift; sourceTree = "<group>"; };
 		C3F2513A2A841D5E002161A1 /* CodableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableMock.swift; sourceTree = "<group>"; };
+		C3F251412A842891002161A1 /* MatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListView.swift; sourceTree = "<group>"; };
+		C3F251452A84290F002161A1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 		C3F250D42A82CA3F002161A1 /* CSTV */ = {
 			isa = PBXGroup;
 			children = (
+				C3F251432A8428E1002161A1 /* Components */,
+				C3F2513C2A84284D002161A1 /* Features */,
 				C3F251172A83098D002161A1 /* Services */,
 				C3F251122A82FC03002161A1 /* Models */,
 				C3F251012A82EC27002161A1 /* Network */,
@@ -301,6 +307,62 @@
 			path = APIClient;
 			sourceTree = "<group>";
 		};
+		C3F2513C2A84284D002161A1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2513D2A842854002161A1 /* MatchList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C3F2513D2A842854002161A1 /* MatchList */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2513E2A842866002161A1 /* Model */,
+				C3F2513F2A84286B002161A1 /* View */,
+				C3F251402A842870002161A1 /* ViewModel */,
+			);
+			path = MatchList;
+			sourceTree = "<group>";
+		};
+		C3F2513E2A842866002161A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3F2513F2A84286B002161A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251412A842891002161A1 /* MatchListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3F251402A842870002161A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C3F251432A8428E1002161A1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251442A8428FA002161A1 /* LoadingView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C3F251442A8428FA002161A1 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251452A84290F002161A1 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -434,6 +496,8 @@
 				C3F251302A840FED002161A1 /* URLSessionProtocol.swift in Sources */,
 				C3F251212A83DC7A002161A1 /* TeamsService.swift in Sources */,
 				C3F250D82A82CA3F002161A1 /* ContentView.swift in Sources */,
+				C3F251422A842891002161A1 /* MatchListView.swift in Sources */,
+				C3F251462A84290F002161A1 /* LoadingView.swift in Sources */,
 				C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */,
 				C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */,
 				C3F2511D2A830F31002161A1 /* MatchService.swift in Sources */,
