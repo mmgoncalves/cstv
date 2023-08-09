@@ -13,11 +13,11 @@ public protocol NetworkAdapterProtocol {
 
 public final class NetworkAdapter {
     private let apiConfig: APIConfigProtocol
-    private let urlSession: URLSession
+    private let urlSession: URLSessionProtocol
     
     init(
         apiConfig: APIConfigProtocol = APIConfig.shared,
-        urlSession: URLSession = .shared
+        urlSession: URLSessionProtocol = URLSession.shared
     ) {
         self.apiConfig = apiConfig
         self.urlSession = urlSession
@@ -39,7 +39,7 @@ extension NetworkAdapter: NetworkAdapterProtocol {
             urlRequest.httpMethod = endpoint.method.rawValue
             urlRequest.addValue(token, forHTTPHeaderField: "Authorization")
             
-            let (data, response) = try await urlSession.data(for: urlRequest)
+            let (data, response) = try await urlSession.data(for: urlRequest, delegate: nil)
             return responseHandler(with: data, response: response)
             
         } catch {
