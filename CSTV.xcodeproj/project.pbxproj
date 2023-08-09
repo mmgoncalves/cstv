@@ -20,6 +20,12 @@
 		C3F251092A82EFB0002161A1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251082A82EFB0002161A1 /* NetworkError.swift */; };
 		C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2510A2A82F029002161A1 /* RequestAPIClient.swift */; };
 		C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2510C2A82F0EC002161A1 /* NetworkAdapter.swift */; };
+		C3F251142A82FC35002161A1 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251132A82FC35002161A1 /* Matches.swift */; };
+		C3F251162A8304DD002161A1 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251152A8304DD002161A1 /* Teams.swift */; };
+		C3F2511B2A8309C6002161A1 /* MatchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2511A2A8309C6002161A1 /* MatchEndpoint.swift */; };
+		C3F2511D2A830F31002161A1 /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2511C2A830F31002161A1 /* MatchService.swift */; };
+		C3F2511F2A83DB23002161A1 /* TeamsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2511E2A83DB23002161A1 /* TeamsEndpoint.swift */; };
+		C3F251212A83DC7A002161A1 /* TeamsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251202A83DC7A002161A1 /* TeamsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		C3F251082A82EFB0002161A1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C3F2510A2A82F029002161A1 /* RequestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIClient.swift; sourceTree = "<group>"; };
 		C3F2510C2A82F0EC002161A1 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
+		C3F251132A82FC35002161A1 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
+		C3F251152A8304DD002161A1 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		C3F2511A2A8309C6002161A1 /* MatchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchEndpoint.swift; sourceTree = "<group>"; };
+		C3F2511C2A830F31002161A1 /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
+		C3F2511E2A83DB23002161A1 /* TeamsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsEndpoint.swift; sourceTree = "<group>"; };
+		C3F251202A83DC7A002161A1 /* TeamsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,8 @@
 		C3F250D42A82CA3F002161A1 /* CSTV */ = {
 			isa = PBXGroup;
 			children = (
+				C3F251172A83098D002161A1 /* Services */,
+				C3F251122A82FC03002161A1 /* Models */,
 				C3F251012A82EC27002161A1 /* Network */,
 				C3F251002A82EB99002161A1 /* Resources */,
 				C3F250D52A82CA3F002161A1 /* CSTVApp.swift */,
@@ -193,6 +207,42 @@
 				C3F251042A82ED8B002161A1 /* APIConfig.swift */,
 			);
 			path = APIConfig;
+			sourceTree = "<group>";
+		};
+		C3F251122A82FC03002161A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251132A82FC35002161A1 /* Matches.swift */,
+				C3F251152A8304DD002161A1 /* Teams.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3F251172A83098D002161A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251192A8309B0002161A1 /* TeamsService */,
+				C3F251182A8309A7002161A1 /* MatchService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C3F251182A8309A7002161A1 /* MatchService */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2511A2A8309C6002161A1 /* MatchEndpoint.swift */,
+				C3F2511C2A830F31002161A1 /* MatchService.swift */,
+			);
+			path = MatchService;
+			sourceTree = "<group>";
+		};
+		C3F251192A8309B0002161A1 /* TeamsService */ = {
+			isa = PBXGroup;
+			children = (
+				C3F2511E2A83DB23002161A1 /* TeamsEndpoint.swift */,
+				C3F251202A83DC7A002161A1 /* TeamsService.swift */,
+			);
+			path = TeamsService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,13 +375,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F251212A83DC7A002161A1 /* TeamsService.swift in Sources */,
 				C3F250D82A82CA3F002161A1 /* ContentView.swift in Sources */,
 				C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */,
 				C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */,
+				C3F2511D2A830F31002161A1 /* MatchService.swift in Sources */,
 				C3F251032A82ECFB002161A1 /* Endpoint.swift in Sources */,
 				C3F251052A82ED8B002161A1 /* APIConfig.swift in Sources */,
+				C3F2511B2A8309C6002161A1 /* MatchEndpoint.swift in Sources */,
+				C3F2511F2A83DB23002161A1 /* TeamsEndpoint.swift in Sources */,
 				C3F251092A82EFB0002161A1 /* NetworkError.swift in Sources */,
+				C3F251162A8304DD002161A1 /* Teams.swift in Sources */,
 				C3F251072A82EF3F002161A1 /* APIClient.swift in Sources */,
+				C3F251142A82FC35002161A1 /* Matches.swift in Sources */,
 				C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
