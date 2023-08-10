@@ -17,7 +17,7 @@ struct LiveView: View {
                 .fontWeight(.bold)
         }
         .background(.red)
-        .cornerRadius(5)
+        .customCornerRadius(16, corners: .bottomLeft)
     }
 }
 

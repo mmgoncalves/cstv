@@ -19,20 +19,30 @@ struct CardView: View {
     @StateObject var match: Match
     
     var body: some View {
-        VStack {
-            GameView(teamOne: teamOne, teamTwo: teamTwo)
-                .padding(.init(top: 15, leading: 40, bottom: 5, trailing: 40))
-            
-            Divider()
-                .background(.white.opacity(0.2))
-                .padding(.bottom, 10)
-            HStack {
-                LeagueView(
-                    leagueImage: match.league.image,
-                    leagueName: match.league.name,
-                    serieName: match.serie.name ?? ""
-                )
-                .padding(.leading, 20)
+        HStack {
+            VStack {
+                GameView(teamOne: teamOne, teamTwo: teamTwo)
+                    .padding(.init(top: 15, leading: 40, bottom: 5, trailing: 40))
+                
+                Divider()
+                    .background(.white.opacity(0.2))
+                    .padding(.bottom, 10)
+                HStack {
+                    LeagueView(
+                        leagueImage: match.league.image,
+                        leagueName: match.league.name,
+                        serieName: match.serie.name ?? ""
+                    )
+                    .padding(.leading, 20)
+                    Spacer()
+                }
+            }
+            VStack {
+                if match.status == .running {
+                    LiveView()
+                } else {
+                    MatchTimeView(matchTime: "Hoje")
+                }
                 Spacer()
             }
         }

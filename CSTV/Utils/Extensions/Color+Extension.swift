@@ -15,4 +15,8 @@ extension Color {
     static var cardBackground: Color {
         Color("cardBackground")
     }
+    
+    static var matchTimeBackground: Color {
+        Color("matchTimeBackground")
+    }
 }
