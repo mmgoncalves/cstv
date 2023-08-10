@@ -11,9 +11,9 @@ struct MatchEndpoint: Endpoint {
     let path: String = "/matches"
     let method: ResquestMethod = .get
     let queryParams: [URLQueryItem]
-    let perPage = 80
+    let perPage = 10
     
-    init(page: Int = 1, beginAt: String, endAt: String) {
+    init(page: Int, beginAt: String, endAt: String) {
         queryParams = [
             .init(name: "page", value: String(page)),
             .init(name: "per_page", value: String(perPage)),
