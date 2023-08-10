@@ -18,9 +18,7 @@ struct Team: Codable, Identifiable {
     let players: [Player]?
     
     enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case players
         case image = "image_url"
+        case id, name, players
     }
 }

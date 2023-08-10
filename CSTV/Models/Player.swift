@@ -15,10 +15,9 @@ struct Player: Codable, Identifiable {
     let name: String
     
     enum CodingKeys: String, CodingKey {
-        case id
-        case name
         case firstName = "first_name"
         case lastName = "last_name"
         case image = "image_url"
+        case id, name
     }
 }

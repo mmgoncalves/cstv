@@ -16,7 +16,7 @@ struct CardView: View {
         match.opponents[1].team
     }
     
-    @StateObject var match: Match
+    var match: Match
     
     var body: some View {
         HStack {
@@ -40,8 +40,8 @@ struct CardView: View {
             VStack {
                 if match.status == .running {
                     LiveView()
-                } else {
-                    MatchTimeView(matchTime: "Hoje")
+                } else if let matchTime = match.matchTime {
+                    MatchTimeView(matchTime: matchTime)
                 }
                 Spacer()
             }
@@ -58,6 +58,7 @@ struct CardView_Previews: PreviewProvider {
             CardView(
                 match: Match(
                     id: 1,
+                    beginAt: "2023-08-10T18:28:00Z",
                     league: League(
                         image: "https://cdn.pandascore.co/images/league/image/4842/600px-cct_south_america_icon_allmode-png",
                         name: "League Name"

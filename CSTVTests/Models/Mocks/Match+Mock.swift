@@ -8,9 +8,10 @@
 @testable import CSTV
 
 extension Match {
-    static func mock(id: Int) -> Match {
+    static func mock(id: Int, beginAt: String = "") -> Match {
         .init(
             id: id,
+            beginAt: beginAt,
             league: .mock(),
             status: .finished,
             opponents: [.mock()],

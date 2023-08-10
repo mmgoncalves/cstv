@@ -54,6 +54,7 @@
 		C3F251782A85249E002161A1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251772A85249E002161A1 /* Player.swift */; };
 		C3F2517B2A85720C002161A1 /* MatchTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2517A2A85720C002161A1 /* MatchTimeView.swift */; };
 		C3F2517D2A8577B6002161A1 /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2517C2A8577B6002161A1 /* View+CornerRadius.swift */; };
+		C3F251802A8586C7002161A1 /* MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2517F2A8586C7002161A1 /* MatchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		C3F251772A85249E002161A1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		C3F2517A2A85720C002161A1 /* MatchTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTimeView.swift; sourceTree = "<group>"; };
 		C3F2517C2A8577B6002161A1 /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
+		C3F2517F2A8586C7002161A1 /* MatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +201,8 @@
 		C3F250E52A82CA40002161A1 /* CSTVTests */ = {
 			isa = PBXGroup;
 			children = (
-				C3F251542A843050002161A1 /* Models */,
 				C3F251492A842F73002161A1 /* Features */,
+				C3F251542A843050002161A1 /* Models */,
 				C3F251262A840B57002161A1 /* Network */,
 				C3F251502A842FEC002161A1 /* Services */,
 			);
@@ -457,8 +459,8 @@
 		C3F251542A843050002161A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C3F251552A843061002161A1 /* Match+Mock.swift */,
-				C3F251752A852475002161A1 /* Team+Mock.swift */,
+				C3F2517E2A8586B5002161A1 /* Mocks */,
+				C3F2517F2A8586C7002161A1 /* MatchTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -535,6 +537,15 @@
 				C3F2517A2A85720C002161A1 /* MatchTimeView.swift */,
 			);
 			path = MatchTimeView;
+			sourceTree = "<group>";
+		};
+		C3F2517E2A8586B5002161A1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251552A843061002161A1 /* Match+Mock.swift */,
+				C3F251752A852475002161A1 /* Team+Mock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -715,6 +726,7 @@
 				C3F2512C2A840BAE002161A1 /* APIClientMock.swift in Sources */,
 				C3F251292A840B7D002161A1 /* NetworkAdapterTests.swift in Sources */,
 				C3F251392A841C63002161A1 /* NetworkAdapterMock.swift in Sources */,
+				C3F251802A8586C7002161A1 /* MatchTests.swift in Sources */,
 				C3F251762A852475002161A1 /* Team+Mock.swift in Sources */,
 				C3F251532A843002002161A1 /* MatchServiceMock.swift in Sources */,
 			);
