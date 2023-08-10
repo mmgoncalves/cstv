@@ -19,14 +19,23 @@ struct CardView: View {
     var match: Match
     
     var body: some View {
-        HStack {
-            VStack {
+        VStack {
+            HStack {
                 GameView(teamOne: teamOne, teamTwo: teamTwo)
-                    .padding(.init(top: 15, leading: 40, bottom: 5, trailing: 40))
-                
+                    .padding(.leading, 60)
+                    .padding(.trailing, 20)
+                VStack {
+                    if match.status == .running {
+                        LiveView()
+                    } else if let matchTime = match.matchTime {
+                        MatchTimeView(matchTime: matchTime)
+                    }
+                    Spacer()
+                }
+            }
+            VStack {
                 Divider()
                     .background(.white.opacity(0.2))
-                    .padding(.bottom, 10)
                 HStack {
                     LeagueView(
                         leagueImage: match.league.image,
@@ -34,16 +43,9 @@ struct CardView: View {
                         serieName: match.serie.name ?? ""
                     )
                     .padding(.leading, 20)
+                    .padding(.bottom, 5)
                     Spacer()
                 }
-            }
-            VStack {
-                if match.status == .running {
-                    LiveView()
-                } else if let matchTime = match.matchTime {
-                    MatchTimeView(matchTime: matchTime)
-                }
-                Spacer()
             }
         }
         .frame(width: 312, height: 176)
