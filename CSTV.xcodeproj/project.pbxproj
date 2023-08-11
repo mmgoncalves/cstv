@@ -262,11 +262,7 @@
 		C3F251122A82FC03002161A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C3F251592A844E39002161A1 /* League.swift */,
-				C3F251572A844E1F002161A1 /* Match.swift */,
-				C3F2515B2A844E4D002161A1 /* Opponents.swift */,
 				C3F251772A85249E002161A1 /* Player.swift */,
-				C3F2515D2A844E65002161A1 /* Serie.swift */,
 				C3F251152A8304DD002161A1 /* Teams.swift */,
 			);
 			path = Models;
@@ -359,6 +355,10 @@
 		C3F2513E2A842866002161A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C3F251592A844E39002161A1 /* League.swift */,
+				C3F251572A844E1F002161A1 /* Match.swift */,
+				C3F2515B2A844E4D002161A1 /* Opponents.swift */,
+				C3F2515D2A844E65002161A1 /* Serie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
