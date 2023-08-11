@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C365E8F22A8694FB00B7E3AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365E8F12A8694FB00B7E3AE /* Constants.swift */; };
 		C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250D52A82CA3F002161A1 /* CSTVApp.swift */; };
 		C3F250DA2A82CA40002161A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250D92A82CA40002161A1 /* Assets.xcassets */; };
 		C3F250DD2A82CA40002161A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250DC2A82CA40002161A1 /* Preview Assets.xcassets */; };
-		C3F250F12A82CA40002161A1 /* CSTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250F02A82CA40002161A1 /* CSTVUITests.swift */; };
-		C3F250F32A82CA40002161A1 /* CSTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250F22A82CA40002161A1 /* CSTVUITestsLaunchTests.swift */; };
 		C3F251032A82ECFB002161A1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251022A82ECFB002161A1 /* Endpoint.swift */; };
 		C3F251052A82ED8B002161A1 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251042A82ED8B002161A1 /* APIConfig.swift */; };
 		C3F251072A82EF3F002161A1 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251062A82EF3F002161A1 /* APIClient.swift */; };
@@ -74,14 +73,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C365E8EE2A8670D200B7E3AE /* CSTV.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CSTV.xctestplan; sourceTree = "<group>"; };
+		C365E8F12A8694FB00B7E3AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3F250D22A82CA3F002161A1 /* CSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250D52A82CA3F002161A1 /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		C3F250D92A82CA40002161A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F250DC2A82CA40002161A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3F250E22A82CA40002161A1 /* CSTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250EC2A82CA40002161A1 /* CSTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3F250F02A82CA40002161A1 /* CSTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVUITests.swift; sourceTree = "<group>"; };
-		C3F250F22A82CA40002161A1 /* CSTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C3F250FF2A82D1F8002161A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3F251022A82ECFB002161A1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		C3F251042A82ED8B002161A1 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
@@ -155,9 +154,9 @@
 		C3F250C92A82CA3F002161A1 = {
 			isa = PBXGroup;
 			children = (
+				C365E8EE2A8670D200B7E3AE /* CSTV.xctestplan */,
 				C3F250D42A82CA3F002161A1 /* CSTV */,
 				C3F250E52A82CA40002161A1 /* CSTVTests */,
-				C3F250EF2A82CA40002161A1 /* CSTVUITests */,
 				C3F250D32A82CA3F002161A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -205,15 +204,6 @@
 				C3F251502A842FEC002161A1 /* Services */,
 			);
 			path = CSTVTests;
-			sourceTree = "<group>";
-		};
-		C3F250EF2A82CA40002161A1 /* CSTVUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C3F250F02A82CA40002161A1 /* CSTVUITests.swift */,
-				C3F250F22A82CA40002161A1 /* CSTVUITestsLaunchTests.swift */,
-			);
-			path = CSTVUITests;
 			sourceTree = "<group>";
 		};
 		C3F251002A82EB99002161A1 /* Resources */ = {
@@ -274,11 +264,7 @@
 		C3F251122A82FC03002161A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C3F251592A844E39002161A1 /* League.swift */,
-				C3F251572A844E1F002161A1 /* Match.swift */,
-				C3F2515B2A844E4D002161A1 /* Opponents.swift */,
 				C3F251772A85249E002161A1 /* Player.swift */,
-				C3F2515D2A844E65002161A1 /* Serie.swift */,
 				C3F251152A8304DD002161A1 /* Teams.swift */,
 			);
 			path = Models;
@@ -371,6 +357,10 @@
 		C3F2513E2A842866002161A1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C3F251592A844E39002161A1 /* League.swift */,
+				C3F251572A844E1F002161A1 /* Match.swift */,
+				C3F2515B2A844E4D002161A1 /* Opponents.swift */,
+				C3F2515D2A844E65002161A1 /* Serie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -506,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F2516F2A848E2F002161A1 /* Extensions */,
+				C365E8F12A8694FB00B7E3AE /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -684,6 +675,7 @@
 				C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */,
 				C3F2515E2A844E65002161A1 /* Serie.swift in Sources */,
 				C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */,
+				C365E8F22A8694FB00B7E3AE /* Constants.swift in Sources */,
 				C3F2511D2A830F31002161A1 /* MatchService.swift in Sources */,
 				C3F2516D2A84862C002161A1 /* LeagueView.swift in Sources */,
 				C3F251582A844E1F002161A1 /* Match.swift in Sources */,
@@ -732,8 +724,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F250F32A82CA40002161A1 /* CSTVUITestsLaunchTests.swift in Sources */,
-				C3F250F12A82CA40002161A1 /* CSTVUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
