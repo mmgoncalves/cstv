@@ -14,11 +14,11 @@ struct TeamsEndpoint: Endpoint {
     let page = 1
     let perPage = 2
     
-    init(teamOneID: Int, teamTwoID: Int) {
+    init(teamOneId: Int, teamTwoId: Int) {
         queryParams = [
             .init(name: "page", value: String(page)),
             .init(name: "per_page", value: String(perPage)),
-            .init(name: "filter[id]", value: "\(teamOneID),\(teamTwoID)")
+            .init(name: "filter[id]", value: "\(teamOneId),\(teamTwoId)")
         ]
     }
 }

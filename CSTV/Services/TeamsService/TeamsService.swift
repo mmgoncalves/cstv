@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TeamsServiceprotocol {
-    func fetchTeam(teamOneID: Int, teamTwoID: Int) async -> Result<[Team]>
+    func fetchTeam(teamOneId: Int, teamTwoId: Int) async -> Result<[Team]>
 }
 
 final class TeamsService: TeamsServiceprotocol {
@@ -18,8 +18,8 @@ final class TeamsService: TeamsServiceprotocol {
         self.apiClient = apiClient
     }
     
-    func fetchTeam(teamOneID: Int, teamTwoID: Int) async -> Result<[Team]> {
-        let endpoint = TeamsEndpoint(teamOneID: teamOneID, teamTwoID: teamTwoID)
+    func fetchTeam(teamOneId: Int, teamTwoId: Int) async -> Result<[Team]> {
+        let endpoint = TeamsEndpoint(teamOneId: teamOneId, teamTwoId: teamTwoId)
         return await apiClient.request(endpoint)
     }
 }
