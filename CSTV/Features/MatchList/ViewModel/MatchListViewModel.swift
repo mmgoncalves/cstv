@@ -7,15 +7,12 @@
 
 import Foundation
 
-protocol MatchListViewModelProtocol: ObservableObject {
-    func loadMatches() async
-    func reloadList() async
-}
-
-final class MatchListViewModel: MatchListViewModelProtocol {
-    @Published private(set) var matchModel = MatchModel()
+final class MatchListViewModel: ObservableObject {
+    @Published private(set) var matches: [Match] = []
     @Published private (set) var isLoading = false
+    @Published private (set) var isReloading = false
     
+    private(set) var refreshItems = false
     private var currentPage = 0
     private let matchService: MatchServiceProtocol
     private let initialDate: Date
@@ -29,32 +26,62 @@ final class MatchListViewModel: MatchListViewModelProtocol {
     }
     
     func loadMatches() async {
-        DispatchQueue.main.async {
+        await MainActor.run {
             self.isLoading = true
         }
-        currentPage += 1
+        
+        currentPage = 1
+        await fetchMatches()
+        
+        await MainActor.run {
+            self.isLoading = false
+        }
+    }
+    
+    func reloadList() async {
+        refreshItems = true
+        await loadMatches()
+    }
+    
+    func loadMoreMatchesIfNeeded(_ match: Match) async {
+        let total = matches.count
+        let lastMatch = matches[total - 1]
+        if match.id == lastMatch.id {
+            await MainActor.run {
+                self.isReloading = true
+            }
+            
+            currentPage += 1
+            await fetchMatches()
+            
+            await MainActor.run {
+                self.isReloading = false
+            }
+        }
+    }
+    
+    private func fetchMatches() async {
         let dateRange = calculateDateRange()
         let result = await matchService.fetchMatches(
             page: currentPage,
             beginAt: dateRange.beginAt,
             endAt: dateRange.endAt
         )
-     
+        
         switch result {
         case .success(let matches):
-            matchModel.append(matches)
+            if refreshItems {
+                refreshItems = false
+                await MainActor.run {
+                    self.matches = []
+                }
+            }
+            await MainActor.run {
+                self.matches.append(contentsOf: matches)
+            }
         case .failure(let networkError):
-            break
+            print(networkError)
         }
-        DispatchQueue.main.async {
-            self.isLoading = false
-        }
-    }
-    
-    func reloadList() async {
-        currentPage = 0
-        matchModel.reload()
-        await loadMatches()
     }
     
     private func calculateDateRange() -> (beginAt: String, endAt: String) {

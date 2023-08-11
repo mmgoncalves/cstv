@@ -13,27 +13,38 @@ struct MatchListView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                if viewModel.isLoading {
+                if viewModel.isLoading || viewModel.matches.isEmpty {
                     LoadingView()
                         .navigationTitle("")
                 } else {
-                    List {
-                        ForEach(viewModel.matchModel.matches) { match in
+                    VStack {
+                        List(viewModel.matches) { match in
                             CardView(match: match)
                                 .listRowSeparator(.hidden)
                                 .listRowBackground(Color.appBackground)
+                                .onAppear {
+                                    Task {
+                                        await viewModel.loadMoreMatchesIfNeeded(match)
+                                    }
+                                }
+                        }
+                        .scrollContentBackground(.hidden)
+                        .navigationTitle(Text("Partidas"))
+                        .refreshable {
+                            await viewModel.reloadList()
+                        }
+                        if viewModel.isReloading {
+                            ProgressView()
+                                .tint(.white)
                         }
                     }
-                    .scrollContentBackground(.hidden)
-                    .navigationTitle(Text("Partidas"))
                 }
             }
             .background(Color.appBackground)
-        }.onAppear {
-            Task {
-                await viewModel.loadMatches()
-            }
         }
+        .task({
+            await viewModel.loadMatches()
+        })
     }
 }
 

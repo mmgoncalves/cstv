@@ -18,7 +18,7 @@ struct MatchEndpoint: Endpoint {
             .init(name: "page", value: String(page)),
             .init(name: "per_page", value: String(perPage)),
             .init(name: "filter[opponents_filled]", value: "true"),
-            .init(name: "sort", value: "-status"),
+            .init(name: "sort", value: "-status,-begin_at"),
             .init(name: "range[begin_at]", value: "\(endAt),\(beginAt)")
         ]
     }

@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-final class Teams: ObservableObject {
-    @Published var teams: [Team] = []
-}
+//final class Teams: ObservableObject {
+//    @Published var teams: [Team] = []
+//}
 
 struct Team: Codable, Identifiable {
     let id: Int

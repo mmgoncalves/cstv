@@ -22,7 +22,7 @@ final class MatchListViewModelTests: XCTestCase {
         sut = .init(matchService: matchServiceMock, initialDate: initialDate)
     }
     
-    func testLoadMatchesOnce() async {
+    func testLoadMatches() async {
         // - given
         let expectedBeginAt = "2023-08-09"
         let expectedEndAt = "2022-08-09"
@@ -31,7 +31,7 @@ final class MatchListViewModelTests: XCTestCase {
             .mock(id: 2)
         ]
         matchServiceMock.response = .success(matches)
-        XCTAssertEqual(sut.matchModel.matches.count, 0)
+        XCTAssertEqual(sut.matches.count, 0)
         
         // - when
         await sut.loadMatches()
@@ -40,10 +40,10 @@ final class MatchListViewModelTests: XCTestCase {
         XCTAssertEqual(matchServiceMock.page, 1)
         XCTAssertEqual(matchServiceMock.beginAt, expectedBeginAt)
         XCTAssertEqual(matchServiceMock.endAt, expectedEndAt)
-        XCTAssertEqual(sut.matchModel.matches.count, 2)
+        XCTAssertEqual(sut.matches.count, 2)
     }
     
-    func testLoadMatchesTwice() async {
+    func testLoadMoreMatchesIfNeeded() async {
         // - given
         let expectedBeginAt = "2023-08-09"
         let expectedEndAt = "2022-08-09"
@@ -52,17 +52,18 @@ final class MatchListViewModelTests: XCTestCase {
             .mock(id: 2)
         ]
         matchServiceMock.response = .success(matches)
-        XCTAssertEqual(sut.matchModel.matches.count, 0)
+        await sut.loadMatches()
+        XCTAssertEqual(sut.matches.count, 2)
+        XCTAssertEqual(matchServiceMock.page, 1)
         
         // - when
-        await sut.loadMatches()
-        await sut.loadMatches()
+        await sut.loadMoreMatchesIfNeeded(.mock(id: 2))
         
         // - then
         XCTAssertEqual(matchServiceMock.page, 2)
         XCTAssertEqual(matchServiceMock.beginAt, expectedBeginAt)
         XCTAssertEqual(matchServiceMock.endAt, expectedEndAt)
-        XCTAssertEqual(sut.matchModel.matches.count, 4)
+        XCTAssertEqual(sut.matches.count, 4)
     }
     
     func testReloadMatches() async {
@@ -80,6 +81,6 @@ final class MatchListViewModelTests: XCTestCase {
         
         // - then
         XCTAssertEqual(matchServiceMock.page, 1)
-        XCTAssertEqual(sut.matchModel.matches.count, 2)
+        XCTAssertEqual(sut.matches.count, 2)
     }
 }

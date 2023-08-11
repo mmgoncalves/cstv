@@ -18,7 +18,6 @@
 		C3F251092A82EFB0002161A1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251082A82EFB0002161A1 /* NetworkError.swift */; };
 		C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2510A2A82F029002161A1 /* RequestAPIClient.swift */; };
 		C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2510C2A82F0EC002161A1 /* NetworkAdapter.swift */; };
-		C3F251142A82FC35002161A1 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251132A82FC35002161A1 /* MatchModel.swift */; };
 		C3F251162A8304DD002161A1 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F251152A8304DD002161A1 /* Teams.swift */; };
 		C3F2511B2A8309C6002161A1 /* MatchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2511A2A8309C6002161A1 /* MatchEndpoint.swift */; };
 		C3F2511D2A830F31002161A1 /* MatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2511C2A830F31002161A1 /* MatchService.swift */; };
@@ -90,7 +89,6 @@
 		C3F251082A82EFB0002161A1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C3F2510A2A82F029002161A1 /* RequestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIClient.swift; sourceTree = "<group>"; };
 		C3F2510C2A82F0EC002161A1 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
-		C3F251132A82FC35002161A1 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		C3F251152A8304DD002161A1 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 		C3F2511A2A8309C6002161A1 /* MatchEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchEndpoint.swift; sourceTree = "<group>"; };
 		C3F2511C2A830F31002161A1 /* MatchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchService.swift; sourceTree = "<group>"; };
@@ -278,7 +276,6 @@
 			children = (
 				C3F251592A844E39002161A1 /* League.swift */,
 				C3F251572A844E1F002161A1 /* Match.swift */,
-				C3F251132A82FC35002161A1 /* MatchModel.swift */,
 				C3F2515B2A844E4D002161A1 /* Opponents.swift */,
 				C3F251772A85249E002161A1 /* Player.swift */,
 				C3F2515D2A844E65002161A1 /* Serie.swift */,
@@ -705,7 +702,6 @@
 				C3F2516A2A8482C1002161A1 /* CardView.swift in Sources */,
 				C3F251162A8304DD002161A1 /* Teams.swift in Sources */,
 				C3F251072A82EF3F002161A1 /* APIClient.swift in Sources */,
-				C3F251142A82FC35002161A1 /* MatchModel.swift in Sources */,
 				C3F2515A2A844E3A002161A1 /* League.swift in Sources */,
 				C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */,
 				C3F2517D2A8577B6002161A1 /* View+CornerRadius.swift in Sources */,
