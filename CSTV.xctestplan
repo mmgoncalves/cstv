@@ -20,13 +20,6 @@
     {
       "target" : {
         "containerPath" : "container:CSTV.xcodeproj",
-        "identifier" : "C3F250EB2A82CA40002161A1",
-        "name" : "CSTVUITests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:CSTV.xcodeproj",
         "identifier" : "C3F250E12A82CA40002161A1",
         "name" : "CSTVTests"
       }
