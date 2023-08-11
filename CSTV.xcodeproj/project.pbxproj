@@ -74,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C365E8EE2A8670D200B7E3AE /* CSTV.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CSTV.xctestplan; sourceTree = "<group>"; };
 		C3F250D22A82CA3F002161A1 /* CSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250D52A82CA3F002161A1 /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		C3F250D92A82CA40002161A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 		C3F250C92A82CA3F002161A1 = {
 			isa = PBXGroup;
 			children = (
+				C365E8EE2A8670D200B7E3AE /* CSTV.xctestplan */,
 				C3F250D42A82CA3F002161A1 /* CSTV */,
 				C3F250E52A82CA40002161A1 /* CSTVTests */,
 				C3F250EF2A82CA40002161A1 /* CSTVUITests */,
