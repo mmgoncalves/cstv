@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C365E8F22A8694FB00B7E3AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365E8F12A8694FB00B7E3AE /* Constants.swift */; };
 		C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250D52A82CA3F002161A1 /* CSTVApp.swift */; };
 		C3F250DA2A82CA40002161A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250D92A82CA40002161A1 /* Assets.xcassets */; };
 		C3F250DD2A82CA40002161A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250DC2A82CA40002161A1 /* Preview Assets.xcassets */; };
@@ -73,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		C365E8EE2A8670D200B7E3AE /* CSTV.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CSTV.xctestplan; sourceTree = "<group>"; };
+		C365E8F12A8694FB00B7E3AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3F250D22A82CA3F002161A1 /* CSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250D52A82CA3F002161A1 /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		C3F250D92A82CA40002161A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F2516F2A848E2F002161A1 /* Extensions */,
+				C365E8F12A8694FB00B7E3AE /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */,
 				C3F2515E2A844E65002161A1 /* Serie.swift in Sources */,
 				C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */,
+				C365E8F22A8694FB00B7E3AE /* Constants.swift in Sources */,
 				C3F2511D2A830F31002161A1 /* MatchService.swift in Sources */,
 				C3F2516D2A84862C002161A1 /* LeagueView.swift in Sources */,
 				C3F251582A844E1F002161A1 /* Match.swift in Sources */,
