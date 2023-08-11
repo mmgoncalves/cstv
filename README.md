@@ -17,7 +17,9 @@
 
 ## Configure Access token
 - Open the terminal and go to the project main folder;
-- Run the code **bash scripts/setUpAccessToken.sh -token YourTokenHere**
+- Run the code bellow 
+  
+ `bash scripts/setUpAccessToken.sh -token YourTokenHere` 
 
 ## Running the project
 - Download or clone the project;
