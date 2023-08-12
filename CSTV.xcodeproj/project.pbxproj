@@ -14,6 +14,9 @@
 		C3AE4AFD2A86D78A007598A7 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4AFC2A86D78A007598A7 /* MatchDetailView.swift */; };
 		C3AE4B002A86EB1A007598A7 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4AFF2A86EB1A007598A7 /* PlayerView.swift */; };
 		C3AE4B032A86F50B007598A7 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B022A86F50B007598A7 /* PlayerListView.swift */; };
+		C3AE4B052A87B64E007598A7 /* Player+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B042A87B64E007598A7 /* Player+Extension.swift */; };
+		C3AE4B082A87B822007598A7 /* TeamsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */; };
+		C3AE4B0B2A87C1CA007598A7 /* MatchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */; };
 		C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250D52A82CA3F002161A1 /* CSTVApp.swift */; };
 		C3F250DA2A82CA40002161A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250D92A82CA40002161A1 /* Assets.xcassets */; };
 		C3F250DD2A82CA40002161A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250DC2A82CA40002161A1 /* Preview Assets.xcassets */; };
@@ -80,6 +83,9 @@
 		C3AE4AFC2A86D78A007598A7 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
 		C3AE4AFF2A86EB1A007598A7 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		C3AE4B022A86F50B007598A7 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		C3AE4B042A87B64E007598A7 /* Player+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+Extension.swift"; sourceTree = "<group>"; };
+		C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsServiceTests.swift; sourceTree = "<group>"; };
+		C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchServiceTests.swift; sourceTree = "<group>"; };
 		C3F250D22A82CA3F002161A1 /* CSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250D52A82CA3F002161A1 /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		C3F250D92A82CA40002161A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 		C3AE4AFB2A86BAB5007598A7 /* TestUtils */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE4B042A87B64E007598A7 /* Player+Extension.swift */,
 			);
 			path = TestUtils;
 			sourceTree = "<group>";
@@ -220,6 +227,22 @@
 				C3AE4B022A86F50B007598A7 /* PlayerListView.swift */,
 			);
 			path = PlayerListView;
+			sourceTree = "<group>";
+		};
+		C3AE4B062A87B808007598A7 /* TeamsService */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */,
+			);
+			path = TeamsService;
+			sourceTree = "<group>";
+		};
+		C3AE4B092A87C1B6007598A7 /* MatchService */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */,
+			);
+			path = MatchService;
 			sourceTree = "<group>";
 		};
 		C3F250C92A82CA3F002161A1 = {
@@ -495,6 +518,8 @@
 		C3F251502A842FEC002161A1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE4B092A87C1B6007598A7 /* MatchService */,
+				C3AE4B062A87B808007598A7 /* TeamsService */,
 				C3F251512A842FF8002161A1 /* Mocks */,
 			);
 			path = Services;
@@ -750,8 +775,11 @@
 				C3AE4AFA2A86B5EB007598A7 /* TeamsServiceMock.swift in Sources */,
 				C3AE4AF82A86B56E007598A7 /* MatchDetailViewModelTests.swift in Sources */,
 				C3F251372A841C10002161A1 /* RequestAPIClientTests.swift in Sources */,
+				C3AE4B052A87B64E007598A7 /* Player+Extension.swift in Sources */,
+				C3AE4B0B2A87C1CA007598A7 /* MatchServiceTests.swift in Sources */,
 				C3F2513B2A841D5E002161A1 /* CodableMock.swift in Sources */,
 				C3F251342A84120D002161A1 /* EndpointMock.swift in Sources */,
+				C3AE4B082A87B822007598A7 /* TeamsServiceTests.swift in Sources */,
 				C3F251562A843061002161A1 /* Match+Mock.swift in Sources */,
 				C3F2512C2A840BAE002161A1 /* APIClientMock.swift in Sources */,
 				C3F251292A840B7D002161A1 /* NetworkAdapterTests.swift in Sources */,

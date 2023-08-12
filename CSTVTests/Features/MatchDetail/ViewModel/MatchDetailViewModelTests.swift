@@ -42,9 +42,3 @@ final class MatchDetailViewModelTests: XCTestCase {
         XCTAssertNotEqual(sut.playersTeamTwo, expectedTeamOne.players)
     }
 }
-
-extension Player: Equatable {
-    public static func == (lhs: Player, rhs: Player) -> Bool {
-        lhs.id == rhs.id
-    }
-}
