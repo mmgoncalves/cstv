@@ -9,8 +9,8 @@ import Foundation
 
 struct Player: Codable, Identifiable {
     let id: Int
-    let firstName: String
-    let lastName: String
+    let firstName: String?
+    let lastName: String?
     let image: String?
     let name: String
     

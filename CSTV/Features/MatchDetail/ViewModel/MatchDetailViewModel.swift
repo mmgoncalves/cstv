@@ -13,10 +13,18 @@ final class MatchDetailViewModel: ObservableObject {
     @Published private (set) var isLoading = false
     
     var title: String {
-        match.league.name + (match.serie.name ?? "")
+        "\(match.league.name) \((match.serie.name ?? ""))"
     }
     var matchTime: String? {
         match.matchTime
+    }
+    
+    var teamOne: Team {
+        match.opponents[0].team
+    }
+    
+    var teamTwo: Team {
+        match.opponents[1].team
     }
     
     private let match: Match
@@ -56,14 +64,12 @@ final class MatchDetailViewModel: ObservableObject {
     }
     
     private func handleResult(_ teams: [Team]) {
-        if teams.indices.contains(0) {
-            let team = teams[0]
-            playersTeamOne = team.players ?? []
+        if let playersTeamOne = teams.first(where: { $0.id == teamOne.id })?.players {
+            self.playersTeamOne = playersTeamOne
         }
         
-        if teams.indices.contains(1) {
-            let team = teams[1]
-            playersTeamTwo = team.players ?? []
+        if let playersTeamTwo = teams.first(where: { $0.id == teamTwo.id })?.players {
+            self.playersTeamTwo = playersTeamTwo
         }
     }
     

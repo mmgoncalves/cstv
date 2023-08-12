@@ -19,14 +19,26 @@ struct MatchListView: View {
                 } else {
                     VStack {
                         List(viewModel.matches) { match in
-                            CardView(match: match)
-                                .listRowSeparator(.hidden)
-                                .listRowBackground(Color.appBackground)
-                                .onAppear {
-                                    Task {
-                                        await viewModel.loadMoreMatchesIfNeeded(match)
+                            ZStack(alignment: .leading) {
+                                 NavigationLink(
+                                    destination: MatchDetailView()
+                                        .toolbarRole(.editor)
+                                        .environmentObject(
+                                            MatchDetailViewModel(
+                                                match: match
+                                            )
+                                        )
+                                 ) {}.opacity(0.0)
+                                
+                                CardView(match: match)
+                                    .onAppear {
+                                        Task {
+                                            await viewModel.loadMoreMatchesIfNeeded(match)
+                                        }
                                     }
-                                }
+                            }
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.appBackground)
                         }
                         .scrollContentBackground(.hidden)
                         .navigationTitle(Text("Partidas"))

@@ -19,4 +19,8 @@ extension Color {
     static var matchTimeBackground: Color {
         Color("matchTimeBackground")
     }
+    
+    static var subtitleColor: Color {
+        Color("subtitle")
+    }
 }

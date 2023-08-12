@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct TeamView: View {
-    var teamImage: String?
-    var teamName: String
+    let teamImage: String?
+    let teamName: String
     
     var body: some View {
         VStack {
@@ -36,7 +36,6 @@ struct TeamView: View {
                 .foregroundColor(.white)
                 .padding(8)
         }
-        .background(Color.cardBackground)
     }
 }
 

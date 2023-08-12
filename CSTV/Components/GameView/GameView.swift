@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct GameView: View {
-    var teamOne: Team
-    var teamTwo: Team
+    let teamOne: Team
+    let teamTwo: Team
     
     var body: some View {
         HStack {
@@ -23,7 +23,6 @@ struct GameView: View {
             TeamView(teamImage: teamTwo.image, teamName: teamTwo.name)
             
         }
-        .background(Color.cardBackground)
     }
 }
 
@@ -44,5 +43,6 @@ struct GameView_Previews: PreviewProvider {
                 )
             )
         }
+        .background(Color.appBackground)
     }
 }
