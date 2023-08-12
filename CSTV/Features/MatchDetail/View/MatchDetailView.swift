@@ -15,32 +15,32 @@ struct MatchDetailView: View {
             ZStack {
                 Color.appBackground
                     .ignoresSafeArea()
-                VStack {
-                    if viewModel.isLoading {
-                        LoadingView()
-                    } else {
-                        VStack {
-                            HStack {
-                                VStack {
-                                    GameView(
-                                        teamOne: viewModel.teamOne,
-                                        teamTwo: viewModel.teamTwo
-                                    )
-                                    .frame(width: 230)
-                                    .padding(.top, 20)
-                                    if let matchTime = viewModel.matchTime {
-                                        Text(matchTime)
-                                            .font(.appFont(12))
-                                            .foregroundColor(.white)
-                                            .fontWeight(.heavy)
-                                            .padding(.top, 10)
-                                            .padding(.bottom, 10)
+                ScrollView(showsIndicators: false) {
+                    VStack {
+                        if viewModel.isLoading {
+                            LoadingView()
+                        } else {
+                            VStack {
+                                HStack {
+                                    VStack {
+                                        GameView(
+                                            teamOne: viewModel.teamOne,
+                                            teamTwo: viewModel.teamTwo
+                                        )
+                                        .frame(width: 230)
+                                        .padding(.top, 20)
+                                        if let matchTime = viewModel.matchTime {
+                                            Text(matchTime)
+                                                .font(.appFont(12))
+                                                .foregroundColor(.white)
+                                                .fontWeight(.heavy)
+                                                .padding(.top, 10)
+                                                .padding(.bottom, 10)
+                                        }
                                     }
+                                    .navigationTitle(viewModel.title)
+                                    .navigationBarTitleDisplayMode(.inline)
                                 }
-                                .navigationTitle(viewModel.title)
-                                .navigationBarTitleDisplayMode(.inline)
-                            }
-                            ScrollView {
                                 GeometryReader { geometry in
                                     HStack {
                                         PlayerListView(
