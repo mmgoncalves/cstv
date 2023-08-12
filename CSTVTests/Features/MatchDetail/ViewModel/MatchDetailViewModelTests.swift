@@ -26,7 +26,7 @@ final class MatchDetailViewModelTests: XCTestCase {
     func testLoadTeams() async {
         // - given
         let expectedTeamOne = Team.mock(id: 1)
-        let expectedTeamTwo = Team.mock(id: 4)
+        let expectedTeamTwo = Team.mock(id: 2)
         teamsServiceMock.response = .success([expectedTeamOne, expectedTeamTwo])
         
         // - when
