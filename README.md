@@ -3,6 +3,7 @@
 ## Tech stack:
 - Language: Swift 5.8.1
 - IDE: Xcode 14.3.1
+- SPM dependencies: [swift-snapshot-testing](https://github.com/pointfreeco/swift-snapshot-testing)
 <br>
 
 ## You'll find in this project:
