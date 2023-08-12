@@ -14,7 +14,8 @@
       "identifier" : "C3F250D12A82CA3F002161A1",
       "name" : "CSTV"
     },
-    "testExecutionOrdering" : "random"
+    "testExecutionOrdering" : "random",
+    "uiTestingScreenshotsLifetime" : "keepNever"
   },
   "testTargets" : [
     {

@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C36239502A86AB5C0072DF87 /* MatchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362394F2A86AB5C0072DF87 /* MatchDetailViewModel.swift */; };
 		C365E8F22A8694FB00B7E3AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365E8F12A8694FB00B7E3AE /* Constants.swift */; };
+		C3AE4AF82A86B56E007598A7 /* MatchDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4AF72A86B56E007598A7 /* MatchDetailViewModelTests.swift */; };
+		C3AE4AFA2A86B5EB007598A7 /* TeamsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4AF92A86B5EB007598A7 /* TeamsServiceMock.swift */; };
+		C3AE4AFD2A86D78A007598A7 /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4AFC2A86D78A007598A7 /* MatchDetailView.swift */; };
+		C3AE4B002A86EB1A007598A7 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4AFF2A86EB1A007598A7 /* PlayerView.swift */; };
+		C3AE4B032A86F50B007598A7 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B022A86F50B007598A7 /* PlayerListView.swift */; };
+		C3AE4B052A87B64E007598A7 /* Player+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B042A87B64E007598A7 /* Player+Extension.swift */; };
+		C3AE4B082A87B822007598A7 /* TeamsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */; };
+		C3AE4B0B2A87C1CA007598A7 /* MatchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */; };
 		C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250D52A82CA3F002161A1 /* CSTVApp.swift */; };
 		C3F250DA2A82CA40002161A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250D92A82CA40002161A1 /* Assets.xcassets */; };
 		C3F250DD2A82CA40002161A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250DC2A82CA40002161A1 /* Preview Assets.xcassets */; };
@@ -63,24 +72,25 @@
 			remoteGlobalIDString = C3F250D12A82CA3F002161A1;
 			remoteInfo = CSTV;
 		};
-		C3F250ED2A82CA40002161A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3F250CA2A82CA3F002161A1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3F250D12A82CA3F002161A1;
-			remoteInfo = CSTV;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C362394F2A86AB5C0072DF87 /* MatchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModel.swift; sourceTree = "<group>"; };
 		C365E8EE2A8670D200B7E3AE /* CSTV.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CSTV.xctestplan; sourceTree = "<group>"; };
 		C365E8F12A8694FB00B7E3AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3AE4AF72A86B56E007598A7 /* MatchDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModelTests.swift; sourceTree = "<group>"; };
+		C3AE4AF92A86B5EB007598A7 /* TeamsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsServiceMock.swift; sourceTree = "<group>"; };
+		C3AE4AFC2A86D78A007598A7 /* MatchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
+		C3AE4AFF2A86EB1A007598A7 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		C3AE4B022A86F50B007598A7 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		C3AE4B042A87B64E007598A7 /* Player+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+Extension.swift"; sourceTree = "<group>"; };
+		C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsServiceTests.swift; sourceTree = "<group>"; };
+		C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchServiceTests.swift; sourceTree = "<group>"; };
 		C3F250D22A82CA3F002161A1 /* CSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250D52A82CA3F002161A1 /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		C3F250D92A82CA40002161A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F250DC2A82CA40002161A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3F250E22A82CA40002161A1 /* CSTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3F250EC2A82CA40002161A1 /* CSTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250FF2A82D1F8002161A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3F251022A82ECFB002161A1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		C3F251042A82ED8B002161A1 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
@@ -141,16 +151,100 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3F250E92A82CA40002161A1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C362394B2A86AB080072DF87 /* MatchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C362394C2A86AB230072DF87 /* Model */,
+				C362394D2A86AB2A0072DF87 /* View */,
+				C362394E2A86AB310072DF87 /* ViewModel */,
+			);
+			path = MatchDetail;
+			sourceTree = "<group>";
+		};
+		C362394C2A86AB230072DF87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3F251772A85249E002161A1 /* Player.swift */,
+				C3F251152A8304DD002161A1 /* Teams.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C362394D2A86AB2A0072DF87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4AFC2A86D78A007598A7 /* MatchDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C362394E2A86AB310072DF87 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C362394F2A86AB5C0072DF87 /* MatchDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C3AE4AF52A86B54F007598A7 /* MatchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4AF62A86B55A007598A7 /* ViewModel */,
+			);
+			path = MatchDetail;
+			sourceTree = "<group>";
+		};
+		C3AE4AF62A86B55A007598A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4AF72A86B56E007598A7 /* MatchDetailViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C3AE4AFB2A86BAB5007598A7 /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B042A87B64E007598A7 /* Player+Extension.swift */,
+			);
+			path = TestUtils;
+			sourceTree = "<group>";
+		};
+		C3AE4AFE2A86EB07007598A7 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4AFF2A86EB1A007598A7 /* PlayerView.swift */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		C3AE4B012A86F4F9007598A7 /* PlayerListView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B022A86F50B007598A7 /* PlayerListView.swift */,
+			);
+			path = PlayerListView;
+			sourceTree = "<group>";
+		};
+		C3AE4B062A87B808007598A7 /* TeamsService */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */,
+			);
+			path = TeamsService;
+			sourceTree = "<group>";
+		};
+		C3AE4B092A87C1B6007598A7 /* MatchService */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */,
+			);
+			path = MatchService;
+			sourceTree = "<group>";
+		};
 		C3F250C92A82CA3F002161A1 = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +260,6 @@
 			children = (
 				C3F250D22A82CA3F002161A1 /* CSTV.app */,
 				C3F250E22A82CA40002161A1 /* CSTVTests.xctest */,
-				C3F250EC2A82CA40002161A1 /* CSTVUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +270,6 @@
 				C3F251432A8428E1002161A1 /* Components */,
 				C3F2513C2A84284D002161A1 /* Features */,
 				C3F251742A8494C2002161A1 /* Initializer */,
-				C3F251122A82FC03002161A1 /* Models */,
 				C3F251012A82EC27002161A1 /* Network */,
 				C3F250DB2A82CA40002161A1 /* Preview Content */,
 				C3F251002A82EB99002161A1 /* Resources */,
@@ -198,6 +290,7 @@
 		C3F250E52A82CA40002161A1 /* CSTVTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE4AFB2A86BAB5007598A7 /* TestUtils */,
 				C3F251492A842F73002161A1 /* Features */,
 				C3F251542A843050002161A1 /* Models */,
 				C3F251262A840B57002161A1 /* Network */,
@@ -259,15 +352,6 @@
 				C3F251042A82ED8B002161A1 /* APIConfig.swift */,
 			);
 			path = APIConfig;
-			sourceTree = "<group>";
-		};
-		C3F251122A82FC03002161A1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C3F251772A85249E002161A1 /* Player.swift */,
-				C3F251152A8304DD002161A1 /* Teams.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		C3F251172A83098D002161A1 /* Services */ = {
@@ -339,6 +423,7 @@
 		C3F2513C2A84284D002161A1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C362394B2A86AB080072DF87 /* MatchDetail */,
 				C3F2513D2A842854002161A1 /* MatchList */,
 			);
 			path = Features;
@@ -390,6 +475,8 @@
 				C3F251652A848196002161A1 /* LiveView */,
 				C3F251442A8428FA002161A1 /* LoadingView */,
 				C3F251792A8571F4002161A1 /* MatchTimeView */,
+				C3AE4B012A86F4F9007598A7 /* PlayerListView */,
+				C3AE4AFE2A86EB07007598A7 /* PlayerView */,
 				C3F251622A8477C9002161A1 /* TeamView */,
 			);
 			path = Components;
@@ -406,6 +493,7 @@
 		C3F251492A842F73002161A1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE4AF52A86B54F007598A7 /* MatchDetail */,
 				C3F2514A2A842F79002161A1 /* MatchList */,
 			);
 			path = Features;
@@ -430,6 +518,8 @@
 		C3F251502A842FEC002161A1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE4B092A87C1B6007598A7 /* MatchService */,
+				C3AE4B062A87B808007598A7 /* TeamsService */,
 				C3F251512A842FF8002161A1 /* Mocks */,
 			);
 			path = Services;
@@ -439,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F251522A843002002161A1 /* MatchServiceMock.swift */,
+				C3AE4AF92A86B5EB007598A7 /* TeamsServiceMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -574,24 +665,6 @@
 			productReference = C3F250E22A82CA40002161A1 /* CSTVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C3F250EB2A82CA40002161A1 /* CSTVUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3F250FC2A82CA40002161A1 /* Build configuration list for PBXNativeTarget "CSTVUITests" */;
-			buildPhases = (
-				C3F250E82A82CA40002161A1 /* Sources */,
-				C3F250E92A82CA40002161A1 /* Frameworks */,
-				C3F250EA2A82CA40002161A1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3F250EE2A82CA40002161A1 /* PBXTargetDependency */,
-			);
-			name = CSTVUITests;
-			productName = CSTVUITests;
-			productReference = C3F250EC2A82CA40002161A1 /* CSTVUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -606,10 +679,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					C3F250E12A82CA40002161A1 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = C3F250D12A82CA3F002161A1;
-					};
-					C3F250EB2A82CA40002161A1 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = C3F250D12A82CA3F002161A1;
 					};
@@ -630,7 +699,6 @@
 			targets = (
 				C3F250D12A82CA3F002161A1 /* CSTV */,
 				C3F250E12A82CA40002161A1 /* CSTVTests */,
-				C3F250EB2A82CA40002161A1 /* CSTVUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -652,13 +720,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3F250EA2A82CA40002161A1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -667,6 +728,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F251302A840FED002161A1 /* URLSessionProtocol.swift in Sources */,
+				C3AE4AFD2A86D78A007598A7 /* MatchDetailView.swift in Sources */,
 				C3F251672A8481A3002161A1 /* LiveView.swift in Sources */,
 				C3F251212A83DC7A002161A1 /* TeamsService.swift in Sources */,
 				C3F2517B2A85720C002161A1 /* MatchTimeView.swift in Sources */,
@@ -675,9 +737,11 @@
 				C3F2510B2A82F029002161A1 /* RequestAPIClient.swift in Sources */,
 				C3F2515E2A844E65002161A1 /* Serie.swift in Sources */,
 				C3F2510D2A82F0EC002161A1 /* NetworkAdapter.swift in Sources */,
+				C3AE4B032A86F50B007598A7 /* PlayerListView.swift in Sources */,
 				C365E8F22A8694FB00B7E3AE /* Constants.swift in Sources */,
 				C3F2511D2A830F31002161A1 /* MatchService.swift in Sources */,
 				C3F2516D2A84862C002161A1 /* LeagueView.swift in Sources */,
+				C36239502A86AB5C0072DF87 /* MatchDetailViewModel.swift in Sources */,
 				C3F251582A844E1F002161A1 /* Match.swift in Sources */,
 				C3F251782A85249E002161A1 /* Player.swift in Sources */,
 				C3F2515C2A844E4D002161A1 /* Opponents.swift in Sources */,
@@ -685,6 +749,7 @@
 				C3F251732A848ECD002161A1 /* Font+Extension.swift in Sources */,
 				C3F251032A82ECFB002161A1 /* Endpoint.swift in Sources */,
 				C3F251712A848E41002161A1 /* Color+Extension.swift in Sources */,
+				C3AE4B002A86EB1A007598A7 /* PlayerView.swift in Sources */,
 				C3F251612A84778D002161A1 /* GameView.swift in Sources */,
 				C3F251052A82ED8B002161A1 /* APIConfig.swift in Sources */,
 				C3F251482A842E25002161A1 /* MatchListViewModel.swift in Sources */,
@@ -707,9 +772,14 @@
 				C3F251322A8410CC002161A1 /* URLSessionMock.swift in Sources */,
 				C3F2514D2A842F91002161A1 /* MatchListViewModelTests.swift in Sources */,
 				C3F2512E2A840D9B002161A1 /* APIConfigMock.swift in Sources */,
+				C3AE4AFA2A86B5EB007598A7 /* TeamsServiceMock.swift in Sources */,
+				C3AE4AF82A86B56E007598A7 /* MatchDetailViewModelTests.swift in Sources */,
 				C3F251372A841C10002161A1 /* RequestAPIClientTests.swift in Sources */,
+				C3AE4B052A87B64E007598A7 /* Player+Extension.swift in Sources */,
+				C3AE4B0B2A87C1CA007598A7 /* MatchServiceTests.swift in Sources */,
 				C3F2513B2A841D5E002161A1 /* CodableMock.swift in Sources */,
 				C3F251342A84120D002161A1 /* EndpointMock.swift in Sources */,
+				C3AE4B082A87B822007598A7 /* TeamsServiceTests.swift in Sources */,
 				C3F251562A843061002161A1 /* Match+Mock.swift in Sources */,
 				C3F2512C2A840BAE002161A1 /* APIClientMock.swift in Sources */,
 				C3F251292A840B7D002161A1 /* NetworkAdapterTests.swift in Sources */,
@@ -720,13 +790,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3F250E82A82CA40002161A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -734,11 +797,6 @@
 			isa = PBXTargetDependency;
 			target = C3F250D12A82CA3F002161A1 /* CSTV */;
 			targetProxy = C3F250E32A82CA40002161A1 /* PBXContainerItemProxy */;
-		};
-		C3F250EE2A82CA40002161A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3F250D12A82CA3F002161A1 /* CSTV */;
-			targetProxy = C3F250ED2A82CA40002161A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -951,40 +1009,6 @@
 			};
 			name = Release;
 		};
-		C3F250FD2A82CA40002161A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mmgoncalves.CSTVUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CSTV;
-			};
-			name = Debug;
-		};
-		C3F250FE2A82CA40002161A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mmgoncalves.CSTVUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CSTV;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1011,15 +1035,6 @@
 			buildConfigurations = (
 				C3F250FA2A82CA40002161A1 /* Debug */,
 				C3F250FB2A82CA40002161A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3F250FC2A82CA40002161A1 /* Build configuration list for PBXNativeTarget "CSTVUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3F250FD2A82CA40002161A1 /* Debug */,
-				C3F250FE2A82CA40002161A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

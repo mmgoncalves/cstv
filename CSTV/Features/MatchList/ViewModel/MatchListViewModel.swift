@@ -26,15 +26,15 @@ final class MatchListViewModel: ObservableObject {
     }
     
     func loadMatches() async {
-        await MainActor.run {
-            self.isLoading = true
+        await MainActor.run { [weak self] in
+            self?.isLoading = true
         }
         
         currentPage = 1
         await fetchMatches()
         
-        await MainActor.run {
-            self.isLoading = false
+        await MainActor.run { [weak self] in
+            self?.isLoading = false
         }
     }
     
@@ -47,15 +47,15 @@ final class MatchListViewModel: ObservableObject {
         let total = matches.count
         let lastMatch = matches[total - 1]
         if match.id == lastMatch.id {
-            await MainActor.run {
-                self.isReloading = true
+            await MainActor.run { [weak self] in
+                self?.isReloading = true
             }
             
             currentPage += 1
             await fetchMatches()
             
-            await MainActor.run {
-                self.isReloading = false
+            await MainActor.run { [weak self] in
+                self?.isReloading = false
             }
         }
     }
@@ -72,15 +72,15 @@ final class MatchListViewModel: ObservableObject {
         case .success(let matches):
             if refreshItems {
                 refreshItems = false
-                await MainActor.run {
-                    self.matches = []
+                await MainActor.run { [weak self] in
+                    self?.matches = []
                 }
             }
-            await MainActor.run {
-                self.matches.append(contentsOf: matches)
+            await MainActor.run { [weak self] in
+                self?.matches.append(contentsOf: matches)
             }
         case .failure(let networkError):
-            print(networkError)
+            print("NetworkError =>", networkError)
         }
     }
     

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MatchTimeView: View {
-    var matchTime: String
+    let matchTime: String
     
     var body: some View {
         HStack {

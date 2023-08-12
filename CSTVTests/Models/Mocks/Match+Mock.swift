@@ -14,7 +14,7 @@ extension Match {
             beginAt: beginAt,
             league: .mock(),
             status: .finished,
-            opponents: [.mock()],
+            opponents: [.mock(id: id), .mock(id: id+1)],
             serie: .mock()
         )
     }
@@ -22,18 +22,18 @@ extension Match {
 
 extension League {
     static func mock() -> League {
-        .init(image: "", name: "")
+        .init(image: "", name: "League name")
     }
 }
 
 extension Opponents {
-    static func mock() -> Opponents {
-        .init(team: .mock())
+    static func mock(id: Int) -> Opponents {
+        .init(team: .mock(id: id))
     }
 }
 
 extension Serie {
     static func mock() -> Serie {
-        .init(name: "")
+        .init(name: "Serie name")
     }
 }

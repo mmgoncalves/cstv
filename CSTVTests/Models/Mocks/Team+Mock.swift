@@ -8,15 +8,15 @@
 @testable import CSTV
 
 extension Team {
-    static func mock() -> Team {
+    static func mock(id: Int) -> Team {
         .init(
-            id: 1,
+            id: id,
             image: "",
             name: "Team Name",
             players: [
-                .mock(id: 1),
-                .mock(id: 2),
-                .mock(id: 3),
+                .mock(id: id+1),
+                .mock(id: id+2),
+                .mock(id: id+3),
             ]
         )
     }
