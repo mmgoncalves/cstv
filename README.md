@@ -8,9 +8,11 @@
 ## You'll find in this project:
 - MVVM architecture
 - SwiftUI for the interface builder
-- Unit tests
 - Clean Code
 - Modular components
+- Unit tests
+- Snapshot tests
+- Code coverage: **93,9%**
 <br>
 
 ## Requirements: 
