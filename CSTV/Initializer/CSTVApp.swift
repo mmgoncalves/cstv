@@ -12,8 +12,9 @@ import UIKit
 struct CSTVApp: App {
     var body: some Scene {
         WindowGroup {
-            MatchListView().onAppear(perform: {
-                setupNavigationBar()
+            MatchListView()
+                .onAppear(perform: {
+                    setupNavigationBar()
             })
             .environmentObject(MatchListViewModel())
         }

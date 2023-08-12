@@ -17,6 +17,16 @@
 		C3AE4B052A87B64E007598A7 /* Player+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B042A87B64E007598A7 /* Player+Extension.swift */; };
 		C3AE4B082A87B822007598A7 /* TeamsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */; };
 		C3AE4B0B2A87C1CA007598A7 /* MatchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */; };
+		C3AE4B0E2A882131007598A7 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = C3AE4B0D2A882131007598A7 /* SnapshotTesting */; };
+		C3AE4B102A8821E3007598A7 /* MatchDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B0F2A8821E3007598A7 /* MatchDetailViewTests.swift */; };
+		C3AE4B142A8835E5007598A7 /* MatchListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B132A8835E5007598A7 /* MatchListViewTests.swift */; };
+		C3AE4B182A8838C0007598A7 /* PlayerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B172A8838C0007598A7 /* PlayerViewTests.swift */; };
+		C3AE4B1B2A883DDC007598A7 /* MatchTimeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B1A2A883DDC007598A7 /* MatchTimeViewTests.swift */; };
+		C3AE4B1E2A884019007598A7 /* PlayerListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B1D2A884019007598A7 /* PlayerListViewTests.swift */; };
+		C3AE4B212A8840E8007598A7 /* GameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B202A8840E8007598A7 /* GameViewTests.swift */; };
+		C3AE4B242A884178007598A7 /* LeagueViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B232A884178007598A7 /* LeagueViewTests.swift */; };
+		C3AE4B272A88446F007598A7 /* CardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B262A88446F007598A7 /* CardViewTests.swift */; };
+		C3AE4B2A2A8844FD007598A7 /* TeamViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AE4B292A8844FD007598A7 /* TeamViewTests.swift */; };
 		C3F250D62A82CA3F002161A1 /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F250D52A82CA3F002161A1 /* CSTVApp.swift */; };
 		C3F250DA2A82CA40002161A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250D92A82CA40002161A1 /* Assets.xcassets */; };
 		C3F250DD2A82CA40002161A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F250DC2A82CA40002161A1 /* Preview Assets.xcassets */; };
@@ -86,6 +96,15 @@
 		C3AE4B042A87B64E007598A7 /* Player+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Player+Extension.swift"; sourceTree = "<group>"; };
 		C3AE4B072A87B822007598A7 /* TeamsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsServiceTests.swift; sourceTree = "<group>"; };
 		C3AE4B0A2A87C1CA007598A7 /* MatchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchServiceTests.swift; sourceTree = "<group>"; };
+		C3AE4B0F2A8821E3007598A7 /* MatchDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B132A8835E5007598A7 /* MatchListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B172A8838C0007598A7 /* PlayerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B1A2A883DDC007598A7 /* MatchTimeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTimeViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B1D2A884019007598A7 /* PlayerListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B202A8840E8007598A7 /* GameViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B232A884178007598A7 /* LeagueViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B262A88446F007598A7 /* CardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewTests.swift; sourceTree = "<group>"; };
+		C3AE4B292A8844FD007598A7 /* TeamViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewTests.swift; sourceTree = "<group>"; };
 		C3F250D22A82CA3F002161A1 /* CSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F250D52A82CA3F002161A1 /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		C3F250D92A82CA40002161A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AE4B0E2A882131007598A7 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				C3AE4AF62A86B55A007598A7 /* ViewModel */,
+				C3AE4B112A88353E007598A7 /* View */,
 			);
 			path = MatchDetail;
 			sourceTree = "<group>";
@@ -245,6 +266,92 @@
 			path = MatchService;
 			sourceTree = "<group>";
 		};
+		C3AE4B112A88353E007598A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B0F2A8821E3007598A7 /* MatchDetailViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3AE4B122A8835D3007598A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B132A8835E5007598A7 /* MatchListViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3AE4B152A883898007598A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B252A88445C007598A7 /* CardView */,
+				C3AE4B1F2A8840DA007598A7 /* GameView */,
+				C3AE4B222A884169007598A7 /* LeagueView */,
+				C3AE4B192A883DC9007598A7 /* MatchTimeView */,
+				C3AE4B1C2A88400A007598A7 /* PlayerListView */,
+				C3AE4B162A8838B2007598A7 /* PlayerView */,
+				C3AE4B282A8844F0007598A7 /* TeamView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C3AE4B162A8838B2007598A7 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B172A8838C0007598A7 /* PlayerViewTests.swift */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		C3AE4B192A883DC9007598A7 /* MatchTimeView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B1A2A883DDC007598A7 /* MatchTimeViewTests.swift */,
+			);
+			path = MatchTimeView;
+			sourceTree = "<group>";
+		};
+		C3AE4B1C2A88400A007598A7 /* PlayerListView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B1D2A884019007598A7 /* PlayerListViewTests.swift */,
+			);
+			path = PlayerListView;
+			sourceTree = "<group>";
+		};
+		C3AE4B1F2A8840DA007598A7 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B202A8840E8007598A7 /* GameViewTests.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		C3AE4B222A884169007598A7 /* LeagueView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B232A884178007598A7 /* LeagueViewTests.swift */,
+			);
+			path = LeagueView;
+			sourceTree = "<group>";
+		};
+		C3AE4B252A88445C007598A7 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B262A88446F007598A7 /* CardViewTests.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		C3AE4B282A8844F0007598A7 /* TeamView */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE4B292A8844FD007598A7 /* TeamViewTests.swift */,
+			);
+			path = TeamView;
+			sourceTree = "<group>";
+		};
 		C3F250C92A82CA3F002161A1 = {
 			isa = PBXGroup;
 			children = (
@@ -290,11 +397,12 @@
 		C3F250E52A82CA40002161A1 /* CSTVTests */ = {
 			isa = PBXGroup;
 			children = (
-				C3AE4AFB2A86BAB5007598A7 /* TestUtils */,
+				C3AE4B152A883898007598A7 /* Components */,
 				C3F251492A842F73002161A1 /* Features */,
 				C3F251542A843050002161A1 /* Models */,
 				C3F251262A840B57002161A1 /* Network */,
 				C3F251502A842FEC002161A1 /* Services */,
+				C3AE4AFB2A86BAB5007598A7 /* TestUtils */,
 			);
 			path = CSTVTests;
 			sourceTree = "<group>";
@@ -502,6 +610,7 @@
 		C3F2514A2A842F79002161A1 /* MatchList */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE4B122A8835D3007598A7 /* View */,
 				C3F2514B2A842F81002161A1 /* ViewModel */,
 			);
 			path = MatchList;
@@ -661,6 +770,9 @@
 				C3F250E42A82CA40002161A1 /* PBXTargetDependency */,
 			);
 			name = CSTVTests;
+			packageProductDependencies = (
+				C3AE4B0D2A882131007598A7 /* SnapshotTesting */,
+			);
 			productName = CSTVTests;
 			productReference = C3F250E22A82CA40002161A1 /* CSTVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -693,6 +805,9 @@
 				Base,
 			);
 			mainGroup = C3F250C92A82CA3F002161A1;
+			packageReferences = (
+				C3AE4B0C2A882131007598A7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = C3F250D32A82CA3F002161A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -771,13 +886,21 @@
 			files = (
 				C3F251322A8410CC002161A1 /* URLSessionMock.swift in Sources */,
 				C3F2514D2A842F91002161A1 /* MatchListViewModelTests.swift in Sources */,
+				C3AE4B2A2A8844FD007598A7 /* TeamViewTests.swift in Sources */,
+				C3AE4B1E2A884019007598A7 /* PlayerListViewTests.swift in Sources */,
 				C3F2512E2A840D9B002161A1 /* APIConfigMock.swift in Sources */,
 				C3AE4AFA2A86B5EB007598A7 /* TeamsServiceMock.swift in Sources */,
 				C3AE4AF82A86B56E007598A7 /* MatchDetailViewModelTests.swift in Sources */,
+				C3AE4B212A8840E8007598A7 /* GameViewTests.swift in Sources */,
 				C3F251372A841C10002161A1 /* RequestAPIClientTests.swift in Sources */,
+				C3AE4B272A88446F007598A7 /* CardViewTests.swift in Sources */,
 				C3AE4B052A87B64E007598A7 /* Player+Extension.swift in Sources */,
 				C3AE4B0B2A87C1CA007598A7 /* MatchServiceTests.swift in Sources */,
+				C3AE4B182A8838C0007598A7 /* PlayerViewTests.swift in Sources */,
 				C3F2513B2A841D5E002161A1 /* CodableMock.swift in Sources */,
+				C3AE4B242A884178007598A7 /* LeagueViewTests.swift in Sources */,
+				C3AE4B102A8821E3007598A7 /* MatchDetailViewTests.swift in Sources */,
+				C3AE4B142A8835E5007598A7 /* MatchListViewTests.swift in Sources */,
 				C3F251342A84120D002161A1 /* EndpointMock.swift in Sources */,
 				C3AE4B082A87B822007598A7 /* TeamsServiceTests.swift in Sources */,
 				C3F251562A843061002161A1 /* Match+Mock.swift in Sources */,
@@ -787,6 +910,7 @@
 				C3F251802A8586C7002161A1 /* MatchTests.swift in Sources */,
 				C3F251762A852475002161A1 /* Team+Mock.swift in Sources */,
 				C3F251532A843002002161A1 /* MatchServiceMock.swift in Sources */,
+				C3AE4B1B2A883DDC007598A7 /* MatchTimeViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,6 +1164,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3AE4B0C2A882131007598A7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3AE4B0D2A882131007598A7 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3AE4B0C2A882131007598A7 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3F250CA2A82CA3F002161A1 /* Project object */;
 }

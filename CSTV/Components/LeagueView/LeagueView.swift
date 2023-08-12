@@ -43,12 +43,14 @@ struct LeagueView: View {
 }
 
 struct LeagueView_Previews: PreviewProvider {
+    static var leagueImage: String? = "https://cdn.pandascore.co/images/league/image/4842/600px-cct_south_america_icon_allmode-png"
+    
     static var previews: some View {
         ZStack {
             Color.cardBackground
                 .ignoresSafeArea()
             LeagueView(
-                leagueImage: "https://cdn.pandascore.co/images/league/image/4842/600px-cct_south_america_icon_allmode-png",
+                leagueImage: leagueImage,
                 leagueName: "League Name",
                 serieName: "Serie Name"
             )
