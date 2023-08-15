@@ -11,7 +11,7 @@ struct Match: Codable, Identifiable {
     let id: Int
     let beginAt: String
     let league: League
-    let status: MatchStatus
+    let status: MatchStatus?
     let opponents: [Opponents]
     let serie: Serie
     
@@ -34,5 +34,6 @@ struct Match: Codable, Identifiable {
         case running
         case notStarted = "not_started"
         case finished
+        case postponed
     }
 }
